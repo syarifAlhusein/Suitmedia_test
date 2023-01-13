@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suit Media Prototype</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  </head>
+  
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="fas-fa-untensils"></i>COMPANY</a>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link">ABOUT</a>
+            <ul class="dropdown">
+              <li><a href="#">HISTORY</a></li>
+              <li><a href="#">VISSION MISSION</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">OUR WORK</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">OUR TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="swiper-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/src/bg.jpg" alt="bg" />
+            <div class="swiper-text">
+              <h4>THIS IS A PLACE WHERE TECHNOLOGY & <br> CREATIVITY FUSED INTO DIGITAL CHEMISTRY</h4>
+            </div>
+          </div>
+          <div class="swiper-slide"><img src="/src/about-bg.jpg" alt="about-bg" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <h3 class="values">OUR VALUES</h3>
+
+    <div class="box-container">
+      <div class="box-1">
+        <div class="image">
+          <img src="./src/lightbulb-o.png" alt="lightbulb-o" />
+        </div>
+        <div class="content">
+          <h3>INNOVATIVE</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipicing elit. Maxime exercitationem dolorem deserunt, unde, eaque ipsa?</p>
+        </div>
+      </div>
+
+      <div class="box-2">
+        <div class="image">
+          <img src="./src/bank.png" alt="bank" />
+        </div>
+        <div class="content">
+          <h3>LOYALTY</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipicing elit. Impedit similique itaque facere temporibus dolores.</p>
+        </div>
+      </div>
+
+      <div class="box-3">
+        <div class="image">
+          <img src="./src/balance-scale.png" alt="balance-scale" />
+        </div>
+        <div class="content">
+          <h3>RESPECT</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipicing elit. Consequatur, sit? Tenetur et neque quod incidunt!</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="contact" id="contact">CONTACT US</h3>
+
+    <form class="contact-container" onsubmit="event.preventDefault(); validateForm()">
+      <div class="input-box">
+        <label for="name">Name</label>
+        <input type="text" id="name"/>
+        <small class="error"></small>
+      </div>
+
+      <div class="input-box">
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+        <small class="error"></small>
+      </div>
+
+      <div class="input-box">
+        <label for="message">Mesaage</label>
+        <textarea id="message" cols="10" rows="4"></textarea>
+        <small class="error"></small>
+      </div>
+
+      <div class="input-box">
+        <input type="submit" value="SUBMIT">
+        <p id="success"></p>
+      </div>
+    </form>
+
+    <div class="footer">
+      <h1>Copyright &copy; 2016. PT Company</h1>
+      <div class="image">
+        <img src="./src/facebook-official.png" alt="facebook-official" />
+        <img src="./src/twitter.png" alt="twitter" />
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
